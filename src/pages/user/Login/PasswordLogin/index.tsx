@@ -69,7 +69,7 @@ const PasswordLogin = () => {
 
   return (
     <Form
-      name="normal_login"
+      name="password_login"
       className="login-form"
       initialValues={{ remember: false }}
       onFinish={handleSubmit}
