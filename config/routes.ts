@@ -1,4 +1,4 @@
-﻿export default [
+export default [
   {
     path: '/user',
     layout: false,
@@ -10,6 +10,11 @@
             name: 'login',
             path: '/user/login',
             component: './user/Login',
+          },
+          {
+            name: 'oldlogin',
+            path: '/user/oldlogin',
+            component: './user/OldLogin',
           },
         ],
       },
@@ -51,6 +56,12 @@
   {
     path: '/',
     redirect: '/welcome',
+  },
+  {
+    name: '空白页面',
+    icon: 'smile',
+    path: '/testpage',
+    component: './TestPage',
   },
   {
     component: './404',
