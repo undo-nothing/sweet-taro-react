@@ -11,11 +11,6 @@ export default [
             path: '/user/login',
             component: './user/Login',
           },
-          {
-            name: 'oldlogin',
-            path: '/user/oldlogin',
-            component: './user/OldLogin',
-          },
         ],
       },
       {
@@ -58,10 +53,10 @@ export default [
     redirect: '/welcome',
   },
   {
-    name: '空白页面',
-    icon: 'smile',
-    path: '/testpage',
-    component: './TestPage',
+    name: 'bing.searchPage',
+    path: '/BingSearch/:date',
+    component: './bing/BingSearch',
+    layout: false,
   },
   {
     component: './404',

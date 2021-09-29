@@ -1,0 +1,118 @@
+.main {
+  width: 100%;
+  height: 100%;
+  background-color: #666;
+  background-repeat: no-repeat;
+  background-position: 50%;
+  background-size: cover;
+}
+
+.headerBox {
+  :global {
+    .ant-btn {
+      margin-right: 0.5rem;
+      margin-left: 0.5rem;
+      padding-right: 0.5rem;
+      padding-left: 0.5rem;
+      color: #0c8484;
+      background-color: hsla(0, 0%, 100%, 0.8);
+      border-color: transparent;
+      border-radius: 2px;
+    }
+  }
+}
+
+.searchBox {
+  position: absolute;
+  top: 210px;
+  left: 18%;
+  width: 800px;
+  :global {
+    .ant-select:not(.ant-select-customize-input) .ant-select-selector {
+      width: 50px;
+      height: 50px;
+      border-color: transparent;
+    }
+    .ant-input-group.ant-input-group-compact > .ant-select-focused {
+      z-index: 0;
+    }
+    .ant-select-focused:not(.ant-select-disabled).ant-select:not(.ant-select-customize-input)
+      .ant-select-selector {
+      border-color: transparent;
+    }
+
+    .ant-select-selection-item {
+      display: none;
+    }
+    .ant-select-selector:hover {
+      border-color: transparent;
+    }
+    .ant-input {
+      width: 520px;
+      height: 50px;
+      font-size: 16px;
+      border-color: transparent;
+      box-shadow: 0 0;
+    }
+    .ant-input-group.ant-input-group-compact > .ant-input:not(:first-child):not(:last-child):focus {
+      z-index: 0;
+    }
+    .ant-input:hover {
+      border-color: transparent;
+    }
+    .ant-btn {
+      width: 70px;
+      height: 50px;
+      color: rgb(0, 125, 170);
+      border-color: transparent;
+    }
+    .ant-btn .anticon {
+      font-size: 28px;
+    }
+    button[ant-click-animating-without-extra-node]::after {
+      border: 0 none;
+      opacity: 0;
+      animation: none 0 ease 0 1 normal;
+    }
+  }
+  .searchLogo {
+    float: left;
+    width: 120px;
+  }
+  .searchInput {
+    float: right;
+    width: 650px;
+  }
+}
+
+.footerBox {
+  position: absolute;
+  bottom: 0;
+  width: 100%;
+  line-height: 60px;
+  .footerRight {
+    float: right;
+    margin-right: 20px;
+    :global {
+      .ant-btn {
+        margin-right: 1rem;
+        color: #fff;
+        background-color: rgba(34, 34, 34, 0.55);
+        border-color: transparent;
+      }
+      .ant-picker {
+        margin-right: 1rem;
+        color: #fff;
+        background-color: rgba(34, 34, 34, 0.55);
+        border-color: transparent;
+        box-shadow: 0 0;
+      }
+      .ant-picker-suffix {
+        color: #fff;
+      }
+      .ant-picker-input > input {
+        color: #fff;
+      }
+    }
+  }
+}
